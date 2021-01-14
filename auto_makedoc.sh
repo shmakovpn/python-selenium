@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Runs `sphinx build` when files in ./doc/source was changed, uses inotifywait for watching files changes
+# Runs `sphinx build` when files in ./doc/source was changed,
+# uses inotifywait for watching files changes
 # Author: shmakovpn <shmakovpn@yandex.ru>
 # Date: 2020-01-07
 

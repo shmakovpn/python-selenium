@@ -1,7 +1,8 @@
 """
 makedoc.py
+++++++++++
 
-Generates the documentation of django_ocr_server
+Generates the documentation of this project
 
 Usage:
 
@@ -9,14 +10,16 @@ Usage:
  
  python makedoc.py
 
-Author: shmakovpn <shmakovpn@yandex.ru>
-Date: 2020-01-13
+| Author: shmakovpn <shmakovpn@yandex.ru>
+| Date: 2020-01-13
 """
 import os
+# The path to the folder of this script
 SCRIPT_DIR: str = os.path.dirname(os.path.abspath(__file__))
 
 
-def run_shpinx() -> None:
+def run_sphinx() -> None:
+    """Executes *sphinx-build* command"""
     docs_dir: str = os.path.join(SCRIPT_DIR, 'docs')
     docs_source_dir: str = os.path.join(docs_dir, 'source')
     build_dir: str = os.path.join(docs_dir, 'build')
@@ -27,4 +30,4 @@ def run_shpinx() -> None:
 
 
 if __name__ == '__main__':
-    run_shpinx()
+    run_sphinx()

@@ -10,6 +10,10 @@ Welcome to python_selenium's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   code/conf.py
+   code/makedoc.py
+   code/auto_makedoc.sh
+   sphinx/code-block.types
 
 
 Indices and tables
