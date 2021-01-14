@@ -13,4 +13,4 @@ from unittest import TestCase
 class TestHelloWorld(TestCase):
     """Checks that the testing works itself"""
     def test_hello_world(self):
-        self.assertEqual('Hello world', "Hello world")
+        self.assertEqual('Hello world!', "Hello world!")
