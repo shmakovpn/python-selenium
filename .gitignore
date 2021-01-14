@@ -1,0 +1,45 @@
+.idea/
+venv/
+# migrations/
+*.pyc
+
+# some temporary files
+temp.py
+temp.html
+notes
+
+#
+dist/
+build/
+__pycache__/
+*.egg-info/
+.eggs/
+
+# sphinx files
+doc/build/html/
+doc/build/doctrees/
+_build
+_static
+_templates
+
+# django project files
+db.sqlite3
+manage.py
+
+# deployment files
+uwsgi.ini
+
+# Visual Studio code
+.vscode/
+
+# codecov
+.coverage
+coverage/
+
+# nodejs
+node_modules/
+
+chromedriver.exe
+
+debug.log
+geckodriver.log
