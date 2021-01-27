@@ -44,3 +44,5 @@ chromedriver.exe
 debug.log
 geckodriver.log
 result.csv
+
+.pytest_cache/

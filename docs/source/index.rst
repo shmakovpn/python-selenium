@@ -6,6 +6,8 @@
 Welcome to python_selenium's documentation!
 ===========================================
 
+Notes and examples about Python and Selenium.
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
