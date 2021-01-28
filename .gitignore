@@ -46,3 +46,5 @@ geckodriver.log
 result.csv
 
 .pytest_cache/
+
+.insyncdl

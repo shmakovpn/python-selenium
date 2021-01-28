@@ -12,10 +12,8 @@ Notes and examples about Python and Selenium.
    :maxdepth: 2
    :caption: Contents:
 
-   code/conf.py
-   code/makedoc.py
-   code/auto_makedoc.sh
-   sphinx/code-block.types
+   code
+   sphinx
 
 
 Indices and tables

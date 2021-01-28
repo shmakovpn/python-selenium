@@ -1,19 +1,14 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# This file only contains a selection of the most common options. For a full
-# list see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
+"""
+docs/source/conf.py
++++++++++++++++++++
 
-# -- Path setup --------------------------------------------------------------
+Configuration file for the Sphinx documentation builder.
 
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
-#
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
-
+| Author: shmakovpn <shmakovpn@yandex.ru>
+| Date: 2021-01-28
+"""
+import os
+import sys
 
 # -- Project information -----------------------------------------------------
 
@@ -21,8 +16,26 @@ project = 'python_selenium'
 copyright = '2021, shmakovpn@yandex.ru'
 author = 'shmakovpn@yandex.ru'
 
+SCRIPT_DIR: str = os.path.dirname(os.path.abspath(__file__))
+DOCS_DIR: str = os.path.dirname(SCRIPT_DIR)
+PROJECT_DIR: str = os.path.dirname(DOCS_DIR)
+PACKAGE_DIR: str = os.path.join(PROJECT_DIR, project)
+
+# -- Path setup --------------------------------------------------------------
+sys.path.insert(0, PROJECT_DIR)  # needed to automodule
+
+# -- imports --
+from python_selenium.version import VERSION
 
 # -- General configuration ---------------------------------------------------
+
+# mocking C modules
+# autodock_mock_imports: List[str] = []
+
+# The short X.Y version
+version: str = VERSION
+# The full version, including alpha/beta/rc tags
+release: str = VERSION
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -30,7 +43,7 @@ author = 'shmakovpn@yandex.ru'
 extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.viewcode',
-    'sphinx.ext.autodoc'
+    'sphinx.ext.autodoc',
 ]
 
 master_doc = 'contents'
@@ -42,7 +55,6 @@ templates_path = ['_templates']
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
-
 
 # -- Options for HTML output -------------------------------------------------
 
