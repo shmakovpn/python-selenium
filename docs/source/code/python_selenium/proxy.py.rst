@@ -11,5 +11,19 @@ python_selenium/proxy.py
 Autodoc documentation
 ---------------------
 
- .. automodule:: python_selenium.proxy
-    :members:
+.. automodule:: python_selenium.proxy
+   :members:
+
+Tests
+-----
+
+.. literalinclude:: ../../../../python_selenium/tests/proxy/test_proxy.py
+   :language: python
+   :caption: test_proxy source code
+   :linenos:
+
+Tests autodoc documentation
+---------------------------
+
+.. automodule:: python_selenium.tests.proxy.test_proxy
+   :members:

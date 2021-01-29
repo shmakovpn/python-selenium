@@ -2,3 +2,4 @@ selenium
 fake-useragent
 selenium-wire
 beautifulsoup4
+aiohttp

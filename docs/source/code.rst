@@ -9,4 +9,5 @@ code
 
    code/makedoc.py
    code/auto_makedoc.sh
+   code/run_coverage.py
    code/python_selenium
